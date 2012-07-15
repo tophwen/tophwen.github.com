@@ -28,8 +28,12 @@ blog.view.makeContent = function(_opt) {
 			break;
 		case 'msg':
 			$('title').html('MSG' + blog.data.header.title); 
-			($('#disqus').length == 0) && 
-			$('article').
+			if ($('#disqus').length == 0) {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.id="disqus"
+                dsq.src = 'http://tophwen.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			}
+			$('article').html('<div id="disqus_thread"></div>');
 			break;
 		case 'links':
 			$.get('post/links.txt', function(data) {
@@ -48,7 +52,7 @@ blog.view.makeContent = function(_opt) {
 			break;
 		default:
 			$.get('post/' + _opt + '.txt', function(data) {
-				$('title').html(); 
+				$('title').html(blog.data.header.title); 
 				var htmlCode = blog.tool.showdown.makeHtml(data);
 				blog.tool.tmpl($('article'), 'tmpl_article', {content: htmlCode, date: _opt.slice(0, 10)});
 			});

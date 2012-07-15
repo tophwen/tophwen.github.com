@@ -1,6 +1,6 @@
 {
 	"header":{
-		"title":"@Toph-",
+		"title":"@Toph",
 		"avatar":"resources/avatar.jpg",
 		"nav":[
 			{"title":"HOME","href":"#"},

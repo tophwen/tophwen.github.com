@@ -1,4 +1,9 @@
 #LINKS
 
+* [inpla](http://inpla.net/)
+* [9ria](http://bbs.9ria.com/forum.php)
+* [mhtml5](http://www.mhtml5.com/)
+* [wefdc](http://www.wefdc.com/)
+* [v2ex](http://v2ex.com)
 * [Gseven's blog](http://www.g7blogs.com "Optional title")
 * [LinZegia's blog](http://lhtml5.com)

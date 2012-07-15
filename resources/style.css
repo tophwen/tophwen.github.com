@@ -1,0 +1,35 @@
+.block{display:block;}
+.iblock{display:inline-block;}
+.none{display:none;}
+.posa{position:absolute;}
+.posr{position:relative;}
+.posf{position:fixed;}
+.fl{float:left;}
+.fr{float:right;}
+.tc{text-align:center;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+html,body{height:100%;width:100%;margin:0 0 0 0;background:#ffffff;font-family:Georgia,"Microsoft YaHei",serif;font-size:16px;line-height:1.5em;}
+::-webkit-scrollbar-track{background:#ddd;}
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-thumb{background:-webkit-linear-gradient(left, #999999 10%, #666666 100%);border-radius:10px 10px 10px 10px;}
+a{text-decoration:none;color:#0ca300;}
+a:hover{text-decoration:underline;color:#5bc728;}
+img{border:none;}
+ul{padding:0 0 0 0;margin:0 0 0 0;list-style:none;}
+blockquote{margin:1em 0 1em 0;padding:0 0 0 2em;border-left:5px solid #eaeaea;}
+pre{padding:1em 1em 1em 1em;margin:1em 0 1em 0;overflow-y:auto;border:1px dashed #22B122;font-family:Monaco,"Consolas","Courier New",MonoSpace;}
+p code{padding:0 0.2em 0 0.2em;background:#f0f0f0;border-radius:3px;font-family:Monaco,"Consolas","Courier New",MonoSpace;}
+header{position:fixed;left:6.5em;top:2em;}header .website_title{color:#000000;}header .website_title:hover{color:#000000;text-decoration:none;}
+header .website_title h1{font-size:1.5em;}
+header nav{width:100px;}header nav li{display:block;}
+header nav a{display:block;background:#ffffff;padding:5px 10px 5px 10px;color:#000000;text-align:center;-webkit-transition:background .2s, color .2s;-moz-transition:background .2s, color .2s;-o-transition:background .2s, color .2s;transition:background .2s, color .2s;}header nav a:hover{background:#5bc728;color:#ffffff;text-decoration:none;}
+article{width:36em;padding:2em 0 3em 20em;}article ul{padding:0 0 0 1.4em;list-style:square;}
+article .post_list_wrap ul{list-style:none;}
+article .post_list_wrap .href_seperator{color:#333333;font-size:1.2em;}
+article .post_list_wrap .post_item{margin:0.5em 0.5em 0.5em 0.5em;}article .post_list_wrap .post_item time{display:inline-block;width:6.8em;color:#888888;}
+article .post_list_wrap .post_item a{-webkit-transition:color .2s;-moz-transition:color .2s;-o-transition:color .2s;transition:color .2s;}
+article .links_page ul{padding:0 0 0 1.4em;list-style:square;}
+article .links_page li{padding:0 0 0.5em 0;}
+footer{position:fixed;bottom:0;left:1em;color:#999999;}

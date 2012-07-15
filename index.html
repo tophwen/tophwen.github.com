@@ -1,1 +1,54 @@
-Hello
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>@Toph-</title>
+	<link rel="stylesheet" href="resources/style.css" type="text/css"/>
+</head>
+<body>
+<div class="blog_wrapper">
+	<header></header>
+	<article></article>
+	<footer><!--<p>按A可改变字体大小</p>--></footer>
+</div>
+<script type="text/html" id="tmpl_header">
+	<a class="website_title" href="/"><h1><%=title%></h1></a>
+	<!--<div class="avatar"><img src="<%=avatar%>" title="<%=title%>" alt="<%=title%>" /></div>!-->
+	<nav>
+		<ul>
+			<% for(var i = 0, leng = nav.length; i < leng; i++){ %>
+				<li><a href="<%=nav[i].href%>" title="<%=nav[i].title%>"><%=nav[i].title%></a></li>
+			<% } %>
+		<ul>
+	</nav>
+</script>
+<script type="text/html" id="tmpl_home">
+	<section class="post_list_wrap">
+		<ul class="post_list">
+			<% for(var i = 0, leng = post.length; i < leng; i++){ %>
+				<% if(i == 0 || post[i].href.slice(0,4) != post[i - 1].href.slice(0,4)){ %>
+					<li class="href_seperator"><%=post[i].href.slice(0,4)%></li>
+				<% } %>
+				<li class="post_item"><time datetime="<%=post[i].href.slice(0,10)%>"><%=post[i].href.slice(0,10)%></time><a href="#!post/<%=post[i].href%>" title="<%=post[i].title%>"><%=post[i].title%></a></li>
+			<% } %>
+		</ul>
+	</section>
+</script>
+<script type="text/html" id="tmpl_article">
+	<section class="article"><%=content%></section>
+	<section class="meta">
+		<span class="date">posted at <time datatime="<%=date%>"><%=date%></time></span>
+	</section>
+</script>
+<script type="text/html" id="tmpl_common">
+	<section><%=content%></section>
+</script>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+<script type="text/javascript" src="js/backbone-min.js"></script>
+<script type="text/javascript" src="js/showdown-min.js"></script>
+<script type="text/javascript" src="js/javascript-micro-templating.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

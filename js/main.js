@@ -28,7 +28,7 @@ blog.view.makeContent = function(_opt) {
 			break;
 		case 'msg':
 			$('title').html('MSG' + blog.data.header.title); 
-			#('#disqus').remove();
+			$('#disqus').remove();
 			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true; dsq.id='disqus';
 			dsq.src = 'http://tophwen.disqus.com/embed.js';
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);			

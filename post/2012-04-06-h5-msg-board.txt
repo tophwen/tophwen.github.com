@@ -1,0 +1,52 @@
+##HTML5本地留言板
+
+好吧，其实一直对  HTML5  很感兴趣，可是迟迟未能接触，昨晚无心做作业，就初步入门了部分，copy了一个本地留言板，其实也只是使用了  localStorage  和  querySelector  而已。
+
+代码参考了 [W3CFUNS](http://www.w3cfuns.com/demos/forum/2012-03/HTML5-WebStorage/) 的教程代码，修正了他的一些BUG。
+
+详情请看 [DEMO](demo/h5-msg-board) (含中文注释)
+
+###localStorage
+
+与 sessionStorage 类似：
+
+存储：将value存储到key字段
+
+	localStorage.setItem('key', 'value');
+	sessionStorage.setItem('key', 'value');
+
+取值：根据字段key取得value值 
+
+	localStorage.getItem('key'); or localStorage['key']; or localStorage.key
+	sessionStorage.getItem('key');
+
+删除：根据字段key删除value值
+
+	localStorage.removeItem('key');
+	sessionStorage.removeItem('key');
+
+清空：清空所有value值
+
+	localStorage.clear();
+	sessionStorage.clear();
+
+遍历：通过key和length遍历
+
+	for (var i = localStorage.lengthi - 1; i >= 0; i--) {
+		var sKey = localStorage.key(i);
+		var sValue = localStorage.getItem(sKey));
+		console.log(sValue);
+	}
+
+###querySelector
+
+类似于 Jquery 的 $() 选择器,与之相似的还有 querySelectorAll ， 区别在于 querySelector 返回的是一个对象（或者是匹配的第一个对象），而 querySelectorAll 返回的是一个数组集合。所以一般使用方法是
+
+	var oItemId = document.querySelector('#id_name');
+	var aItemClass = document.querySelectorAll('.class_name');
+
+两者都支持更复杂的选择方法，例如
+
+	var oTtemFirst = document.querySelector('div.class_name>p:first-child');
+
+

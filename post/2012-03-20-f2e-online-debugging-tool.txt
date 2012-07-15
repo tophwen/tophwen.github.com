@@ -1,0 +1,22 @@
+##在线前端测试工具
+
+一直想收集一下这些神奇的前端在线测试工具，今晚动动手找了几个，都很不错。
+
+###[Tinkerbin](http://tinkerbin.heroku.com/)
+
+不支持框架，但够简洁，用来写原生JS足以。而且它还支持HAML、Sass、Less和CoffeeScript格式，虽然我不会用……囧，不过缺点是编辑区大小不可调
+
+###[Js Bin](http://jsbin.com/)
+
+这是我知道的第一个在线测试工具，第一次用这个看别人给我的代码时还吓了一跳。 = =!
+支持各种前端框架。虽然没有CTRL+ENTER查看效果，但是亮点可以选择实时查看模式（Real-time preview）。
+
+###[jsFiddle](http://jsfiddle.net/)
+
+听说是功能最全最强大的在线测试工具，因为功能很多，所以还未摸熟……但感觉的确最好～
+
+其他只有CSS+HTML和没有share功能的我就pass了，因为我最喜欢的就是他们的share功能，传代码快速无压力啊有木有> <（不过疑问是不知道它能将share的代码能保存多久……囧rz
+
+于是测试一下，分别在三个工具中保存一个CSS3的心型看看能保存多久=。=
+
+[jsFiddle](http://jsfiddle.net/t4X45)  [Js Bin](http://jsbin.com/oliwef/2/edit#preview)  [Tinkerbin](http://tinkerbin.heroku.com/BBik2z2H)

@@ -69,7 +69,7 @@ blog.router = Backbone.Router.extend({
 	},
 	makeMsgPage: function() {
 		blog.view.makeContent('msg');		
-	}
+	},
 	makeAboutPage: function() {
 		blog.view.makeContent('about');
 	},

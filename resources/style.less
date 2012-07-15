@@ -145,7 +145,8 @@ header {
 			.p(5px, 10px, 5px, 10px);
 			.c(@c0);
 			.tc;
-			&:hover {
+			&:hover,
+			&:active {
 				background:@lgreen;
 				.c(@cf);
 				text-decoration:none;
@@ -203,7 +204,7 @@ article {
 	}
 }
 
-
+/*
 footer {
 	.posf;
 	.b();
@@ -211,7 +212,7 @@ footer {
 	.c(@c9);
 }
 
-/*.markdown_dialog {
+.markdown_dialog {
 	.mask {
 		.posf;
 		.t();
@@ -256,3 +257,28 @@ footer {
 		opacity:0.3;
 	}
 }*/
+
+@media only screen and (max-width: 949px) {
+	header {
+		position:initial;
+		margin: 0 auto;
+		overflow:hidden;
+		text-align:center;
+		nav {
+			.w(initial);
+			.m(0,20x,0,20px);
+			.bb(1px,solid,@cd);
+			ul {
+				overflow: hidden;
+			}
+			li {
+				display:inline-block;
+				
+			}
+		}
+	}
+	article {
+		.m(0,auto,0,auto);
+		.p(1em,0,3em,0);
+	}
+}	

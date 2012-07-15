@@ -1,0 +1,7 @@
+##简易AboutMe (简历)
+
+临时做的一个简历page……先push上来，本来是想学做牧风的about动画页面，不过时间不够先写个静态的吧，用时间一定要试试XD
+
+我的[About Page](about/)
+
+PS: 牧风的[About Page](http://mufeng.me/about)

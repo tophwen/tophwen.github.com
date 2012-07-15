@@ -1,0 +1,17 @@
+##About This Blog
+
+很给力很清爽的博客，虽然功能略显简陋，但对轻量简洁控来说可是瞬间萌杀的存在。
+
+对于这个简易博客系统，个人也由衷地感谢作者 [@蛙蛙王子](http://weibo.com/onlytiancai) ，让我走出了一个前端自学的一个小瓶颈。
+
+	前端开发工具： bootstrap
+	JS 工具框架： underscore
+	JS 前端 MVC 框架： backbone (依赖于 underscore )
+	前端模板引擎： mustache
+	JS 版 Markdown 解析器： showdown
+
+除了 mustache 外，其他几乎没有接触过。因此感谢王子给我迷茫的时候打开了前端的一扇大门，让自以为是的我知道世界很大，我知道得很少，犹如井底之蛙。
+
+另外，mark 一下 Markdown 的语法教程： [GitCafe Markdown 语法说明](http://gitcafe.com/riku/Markdown-Syntax-CN/blob/master/syntax.md) ，相当好玩的写博方式 >v<
+
+PS: 原有blog： [yanqw.com](http://yanqw.com/) 可惜网速不稳定……

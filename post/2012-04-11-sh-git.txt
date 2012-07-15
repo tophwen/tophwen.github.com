@@ -1,0 +1,8 @@
+##sh脚本之懒人的git
+
+用的时候只需在项目的目录中输入 sh git.sh 'your commit' 即可。省了几个字……确实够懒……- -!!!
+
+	#!/bin/sh
+	git add *
+	git commit -m $1
+	git push

@@ -1,0 +1,9 @@
+##初探Backbone & new blog()
+
+对原来的 [blog程序](https://github.com/onlytiancai/xiaotiantian) 一直很感兴趣，于是昨晚研究其代码，发现相对我这只菜鸟来说很高深……一边看程序一边查 [Backbone](http://www.css88.com/doc/backbone/) 的文档和 [Undersorce](http://www.css88.com/doc/underscore/) 的文档，才半懂其原理。
+
+于是边学边仿边抓头= =，写下了这个功能简陋的blog程序，主题是简单制作的简约派（果然简约派才是我的魂啊( ˘ ³˘)♥），而本来想试试 [多说](http://duoshuo.com/) 这个国内第三方评论插件，但发现它只支持WP，所以最终还是用回了 [disqus](http://disqus.com/) ，disqus不错，可缺点是在天朝内乏力……
+
+Backbone的MVC博大精深，小僧仍在取经之路上慢慢前行。(((((((っ･ω･)っ
+
+吐槽——回顾了一下这两个月的博文……擦！杂七杂八啊有木有！！东学一下西学一下啊有木有！！嘛……我就是这种人啦……=。= 只要是跟前端有关的、好玩的都试试XD

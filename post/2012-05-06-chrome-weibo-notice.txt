@@ -1,0 +1,45 @@
+##chrome扩展-微博桌面提醒
+
+想做这个插件的原因是昨晚在网上看算法教程的时候，总忍不住看看weibo有没有人@我&评论我，也就是所谓的微博强迫症=。= 虽然已经戒了大半，但有时还是会手贱翻翻微博，降低了自学效率。于是想起了 webQ 的桌面提醒，尝试了一下 XD
+
+###一、
+
+目前仅chrome提供了桌面提醒的api，实现方法是
+
+    var notification = webkitNotifications.createNotification('图标URL(可为空字符串)', '标题', '内容');
+    notification.show();
+    //notification.cancel();
+
+###二、
+
+获得微博的粉丝数、评论数和@数的方法很简单：先在chrome登录新浪微博（相当与一个“激活”功能），在登录后就可以使用 ajax 请求（否则会返回403错误，不太清楚原理）
+
+    http://rm.api.weibo.com/remind/unread_count.json?target=api&_pid=10001&count=20&source=3818214747
+
+获得如下 json
+
+    {"status":8,"follower":0,"cmt":0,"dm":0,"mention_status":0,"mention_cmt":0,"group":0,"notice":0,"invite":0,"badge":0,"photo":0}
+        
+json的对应内容分别是(其他忽略= =)
+
+* follower: 粉丝
+* cmt: 评论
+* dm: 私信
+* mention_status: @我
+* mention_cmt': 在@中提到我
+
+###三、
+
+需要注意的一点是同源策略，本来我只想做成 userscript 而不是扩展，因为 userscript 可以更省系统资源，但是遗憾的是 chrome 竟然不支持在 userscript 中跨域请求 Orz 所以只能做成支持跨域请求的扩展。而需要注意的是 manifest.json 中的跨域配置：
+
+	"permissions": [
+		"notifications",	    //支持跨域的参数
+		"http://rm.api.weibo.com/"  //所要跨的域名
+	]
+
+###四、
+
+学习制作 chrome 扩展的途径很多，我参考了 360 的 [360极速浏览器开发文档](http://open.chrome.360.cn/html/dev_doc.html) 、 ChromeChina 的 [Chrome扩展开发指南](http://dev.chromechina.com/thread-1940-1-1.html) 和 google大神。不过貌似这方面的资料确实不多，而且大部分是英文文档，就当练练英语呗=A=
+
+**==>** [github项目地址](https://github.com/yanqw/js-toy/tree/master/weibo-notice) & [插件下载安装地址](demo/userscript/weibo-notice.crx)
+

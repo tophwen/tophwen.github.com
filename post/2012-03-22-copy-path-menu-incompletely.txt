@@ -1,0 +1,10 @@
+##低仿Path菜单
+
+前段时间Path很火，而它或的其中一大原因便是它让人眼前一亮的菜单，于是手滑低仿了一下。低仿，高仿的对立……好吧，这篇文章是充数的=。=
+
+其实CSS3使用得不多，这个也是一边看 [w3schools.com](http://www.w3schools.com) 的CSS3教程一边做的（吐槽一下 [w3school.com.cn](http://w3school.com.cn/) ，更新太慢了……= =）
+
+CSS3部分其实只用了 transition 和 transform ，因为用纯JS实现有些麻烦（太懒了！喂！），CSS3也还在学，所以效果实在差太多了……Orz……
+
+[DEMO](demo/copy-path-menu/) (已经修复兼容问题，在Chrome Firefox Opera上正常显示)
+
